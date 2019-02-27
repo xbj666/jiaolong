@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zbf.mapper.TestPaperMapper">
+
+
+    <insert id="addFenlei" parameterType="map">
+        insert into lcg_shijuan_fenlei(fenleiid, shijuanfenlei, leibiezhuangtai, createuserid, lastedituserid, createtime, lastedittime, createuser, lastedituser)
+        VALUES(#{fenleiid},#{shijuanfenlei},#{leibiezhuangtai},#{createuserid},#{lastedituserid},#{createtime},#{lastedittime},#{createuser},#{lastedituser})
+    </insert>
+
+    <select id="userInfo" parameterType="page" resultType="map">
+
+            select * from lcg_user
+    </select>
+</mapper>

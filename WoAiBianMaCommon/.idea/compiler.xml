@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="WoAiBianMaCommon" />
+        <module name="WoAiBianMaConfigure" />
+        <module name="WoAiBianMaMapper" />
+        <module name="WoAiBianMaPoJo" />
+        <module name="WoAiBianMaService" />
+        <module name="WoAiBianMaWeb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="WoAiBianMaCommon" target="1.8" />
+      <module name="WoAiBianMaConfigure" target="1.8" />
+      <module name="WoAiBianMaManger" target="1.8" />
+      <module name="WoAiBianMaMapper" target="1.8" />
+      <module name="WoAiBianMaPoJo" target="1.8" />
+      <module name="WoAiBianMaService" target="1.8" />
+      <module name="WoAiBianMaWeb" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

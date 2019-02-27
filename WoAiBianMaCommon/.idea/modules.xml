@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WoAiBianMaCommon.iml" filepath="$PROJECT_DIR$/WoAiBianMaCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WoAiBianMaConfigure/WoAiBianMaConfigure.iml" filepath="$PROJECT_DIR$/../WoAiBianMaConfigure/WoAiBianMaConfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WoAiBianMaManger/WoAiBianMaManger.iml" filepath="$PROJECT_DIR$/../WoAiBianMaManger/WoAiBianMaManger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WoAiBianMaMapper/WoAiBianMaMapper.iml" filepath="$PROJECT_DIR$/../WoAiBianMaMapper/WoAiBianMaMapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WoAiBianMaPoJo/WoAiBianMaPoJo.iml" filepath="$PROJECT_DIR$/../WoAiBianMaPoJo/WoAiBianMaPoJo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WoAiBianMaService/WoAiBianMaService.iml" filepath="$PROJECT_DIR$/../WoAiBianMaService/WoAiBianMaService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WoAiBianMaWeb/WoAiBianMaWeb.iml" filepath="$PROJECT_DIR$/../WoAiBianMaWeb/WoAiBianMaWeb.iml" />
+    </modules>
+  </component>
+</project>

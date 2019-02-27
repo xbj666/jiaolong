@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zbf.mapper.QuestionBankMapper">
+    <insert id="toAddQuestion" parameterType="map">
+        insert into lcg_tiku(id,tikuname,tikushuoming,tikuzhuangtai,createtime)
+        values (#{id},#{tikuname},#{tikushuoming},#{tikuzhuangtai},NOW())
+    </insert>
+    <insert id="insertQuestion" parameterType="map">
+        insert into lcg_timu(id,createuserid,tixingid,tikuid,shitizhuangtai,nanduid,laiyuan,tigan,daan,jiexi,createtime)
+        values (#{id},#{userid},#{tixingid},#{tikuid},#{shitizhuangtai},
+        #{nanduid},#{laiyuan},#{tigan},#{daan},#{jiexi},NOW())
+    </insert>
+    <update id="updateQuestionBankInfo" parameterType="map">
+        update lcg_tiku
+        <set>
+            <if test="tikuname!=null and tikuname!=''">tikuname=#{tikuname},</if>
+            <if test="tikuzhuangtai!=null and tikuzhuangtai!=''">tikuzhuangtai=#{tikuzhuangtai},</if>
+            <if test="tikushuoming!=null and tikushuoming!=''">tikushuoming=#{tikushuoming},</if>
+        </set>
+        <where>
+            <if test="id!=null and id!=''">and id=#{id}</if>
+        </where>
+    </update>
+    <select id="findQuestionList" parameterType="page" resultType="map">
+        select * from lcg_tiku
+        <where>
+            <if test="params.tikuname!=null and params.tikuname!=''">
+                and tikuname like concat('%',#{params.tikuname},'%')
+            </if>
+            <if test="params.tikuzhuangtai!=null and params.tikuzhuangtai!=''">
+                and tikuzhuangtai=#{params.tikuzhuangtai}
+            </if>
+        </where>
+    </select>
+</mapper>
